@@ -1,0 +1,15 @@
+{
+  "name": "xhr-project-demo",
+  "version": "1.0.0",
+  "description": "* **Curso:** _Construye una single page app (SPA) multiusuario consumiendo data remota_ * **Unidad:** _¿QUÉ SIGNIFICA TRAER DATOS DE UN SERVIDOR ASÍNCRONAMENTE?_ * **Desarrolladora:** _Margarita Sutta Juarez_",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.2"
+  }
+}
