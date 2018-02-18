@@ -4,14 +4,30 @@
   height: 100vh;
   color: #347286;
   position: relative;
+}
+
+.pd-body {
   padding-top: 2rem;
 }
 
-.btn {
+.btn-search {
   margin: 4rem;
   width: 18rem;
   font-weight: 900;
   font-family: 'Chau Philomene One';
   font-size: 1.8rem;
   border: 0.3rem dashed black;
+}
+
+header {
+  background-color: #ffc107;
+  height: 230px;
+}
+
+.mg-cards {
+  margin: 1em auto;
+}
+
+#result-container .card {
+  width: 80%;
 }
