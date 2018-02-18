@@ -1,0 +1,17 @@
+.bg-body {
+  background: rgb(108, 112, 111);
+  background: linear-gradient(135deg, rgb(224, 226, 225) 0%, #acacac 100%);
+  height: 100vh;
+  color: #347286;
+  position: relative;
+  padding-top: 2rem;
+}
+
+.btn {
+  margin: 4rem;
+  width: 18rem;
+  font-weight: 900;
+  font-family: 'Chau Philomene One';
+  font-size: 1.8rem;
+  border: 0.3rem dashed black;
+}
