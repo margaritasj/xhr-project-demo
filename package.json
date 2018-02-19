@@ -11,5 +11,14 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.16.2"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/margaritasj/xhr-project-demo.git"
+  },
+  "bugs": {
+    "url": "https://github.com/margaritasj/xhr-project-demo/issues"
+  },
+  "homepage": "https://github.com/margaritasj/xhr-project-demo#readme"
 }

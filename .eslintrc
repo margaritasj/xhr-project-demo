@@ -4,7 +4,7 @@
   },
   "rules": {
     "keyword-spacing": 1,
-    "space-before-function-paren": [1, "never"],
+    "space-before-function-paren": [0, "never"],
     "eqeqeq": 1,
     "space-infix-ops": 1,
     "comma-spacing": 1,

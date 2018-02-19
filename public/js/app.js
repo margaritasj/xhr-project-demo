@@ -62,7 +62,7 @@ window.addEventListener('load', function () {
     let docs = response.docs;
     docs.forEach(function (article) {
       if (article.document_type === 'article') {
-        console.log(article)
+        console.log(article);
         const newsDocs =
           `<div class="container justify-content-center mg-cards card" >
           <div class="row card-body">
