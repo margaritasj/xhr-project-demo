@@ -1,11 +1,11 @@
-////////////////////////////////////////////////jQuery////////////////////////////////////////////////
+/* --------------- jQuery --------------- */
 $(document).ready(function () {
   let openShearch = $('.btn-search');
   openShearch.click(function () {
     window.location.href = 'views/search.html';
   });
 });
-////////////////////////////////////////////////ES6////////////////////////////////////////////////
+/* --------------- ES6 --------------- */
 window.addEventListener('load', function () {
   const searchInput = document.getElementById('search-keyword');
   const resultContainer = document.getElementById('result-container');
@@ -40,6 +40,24 @@ window.addEventListener('load', function () {
     console.log('Se ha presentado un error');
   }
 
+  /* ------------------ btn Fetch ------------------ */
+  btnFetch.addEventListener('click', function () {
+    event.preventDefault();
+    resultContainer.innerHTML = '';
+    textToSearch = searchInput.value;
+    let url = `https://api.nytimes.com/svc/search/v2/articlesearch.json?q=${textToSearch}&api-key=1a029f3f61cb46e8850c20e672cf4896`;
+    fetch(url)
+      .then(function (response) {
+        return response.json();
+      }).then(function (data) {
+        const response = data.response;
+        addNews(response);
+      })
+      .catch(function (error) {
+        console.log(error);
+      });
+  });
+  /* Card de resultados */
   function addNews(response) {
     let docs = response.docs;
     docs.forEach(function (article) {
